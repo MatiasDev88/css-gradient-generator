@@ -12,7 +12,7 @@ git clone https://github.com/MatiasDev88/GradientColorsGenerator.git
 
 ## Screenshot
 
-![website]([enlace-directo-de-la-imagen](https://github.com/MatiasDev88/css-gradient-generator/blob/main/public/img/sc.jpg))
+![website](https://github.com/MatiasDev88/css-gradient-generator/blob/main/public/img/sc.jpg)
 
 ## Contributing
 
