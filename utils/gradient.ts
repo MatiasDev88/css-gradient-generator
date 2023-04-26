@@ -15,17 +15,20 @@ export const generarGradiente = (
 				b = parseInt(color.slice(5, 7), 16);
 				r +=
 					parseInt(
-						(parseInt(colores[index + 1].slice(1, 3), 16) - r) / (pasos / (colores.length - 1)),
+						((parseInt(colores[index + 1].slice(1, 3), 16) - r) /
+							(pasos / (colores.length - 1))) as any,
 						10,
 					) * i;
 				g +=
 					parseInt(
-						(parseInt(colores[index + 1].slice(3, 5), 16) - g) / (pasos / (colores.length - 1)),
+						((parseInt(colores[index + 1].slice(3, 5), 16) - g) /
+							(pasos / (colores.length - 1))) as any,
 						10,
 					) * i;
 				b +=
 					parseInt(
-						(parseInt(colores[index + 1].slice(5, 7), 16) - b) / (pasos / (colores.length - 1)),
+						((parseInt(colores[index + 1].slice(5, 7), 16) - b) /
+							(pasos / (colores.length - 1))) as any,
 						10,
 					) * i;
 				acc += `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b
