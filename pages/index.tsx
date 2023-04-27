@@ -71,7 +71,7 @@ export default function Home() {
 		<div className='vh-100'>
 			<Header />
 			<Nav />
-			<div className='container'>
+			<div className='container-fluid'>
 				<div className='text-center pt-3'>
 					<h1 className='m-0'>Generate a 3-Color-Gradient</h1>
 				</div>
@@ -79,16 +79,31 @@ export default function Home() {
 				<div className='text-center p-0 text-secondary my-1'>
 					<h5 className='mx-0 my-1 ls'>Enter colors</h5>
 				</div>
-				<div className='d-flex justify-content-center position-relative' ref={wrapperRef}>
-					<InputColor inputSelected={1} value={color1} />
-					<InputColor inputSelected={2} value={color2} />
-					<InputColor inputSelected={3} value={color3} />
+				<div
+					className='row d-flex justify-content-center align-items-center position-relative'
+					ref={wrapperRef}>
+					<div className='col-12 col-sm-4 col-md-3 col-lg-2'>
+						<div className='p-1'>
+							<InputColor inputSelected={1} value={color1} />
+						</div>
+					</div>
+					<div className='col-12 col-sm-4 col-md-3 col-lg-2'>
+						<div className='p-1'>
+							<InputColor inputSelected={2} value={color2} />
+						</div>
+					</div>
+					<div className='col-12 col-sm-4 col-md-3 col-lg-2'>
+						<div className='p-1'>
+							<InputColor inputSelected={3} value={color3} />
+						</div>
+					</div>
 					{colorPicker && (
 						<div className='colorPicker'>
 							<ColorPicker />
 						</div>
 					)}
 				</div>
+
 				{alert && (
 					<span className='text-center d-block text-light ls '>* All Colors are required</span>
 				)}

@@ -19,7 +19,7 @@ const InputColor: FC<Props> = ({ inputSelected, value }) => {
 	return (
 		<input
 			onClick={handleColorPicker}
-			className='p-2 border-0 box-shadow-none text-center text-uppercase fw-bold rounded-4 mx-3 shadow-lg'
+			className='p-2 border-0 box-shadow-none text-center text-uppercase fw-bold rounded-4   shadow-lg w-100'
 			style={
 				inputSelected === 1
 					? { backgroundColor: color1 }
