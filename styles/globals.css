@@ -66,10 +66,9 @@ h1 {
 
 .colorPicker {
 	position: absolute;
-	bottom: 100%;
-	margin: 1em;
 	z-index: 2;
-	left: 0%;
+	bottom: 100%;
+	left: 35%;
 }
 
 .pointer {
@@ -97,4 +96,11 @@ h1 {
 	font-family: monospace;
 	font-size: 0.9rem;
 	line-height: 1.5rem;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }

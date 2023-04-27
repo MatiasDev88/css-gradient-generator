@@ -68,7 +68,7 @@ export default function Home() {
 	}, [alert]);
 
 	return (
-		<div className='vh-100'>
+		<div>
 			<Header />
 			<Nav />
 			<div className='container-fluid'>
@@ -80,7 +80,7 @@ export default function Home() {
 					<h5 className='mx-0 my-1 ls'>Enter colors</h5>
 				</div>
 				<div
-					className='row d-flex justify-content-center align-items-center position-relative'
+					className='row d-flex justify-content-center align-items-center position-relative vw-100'
 					ref={wrapperRef}>
 					<div className='col-12 col-sm-4 col-md-3 col-lg-2'>
 						<div className='p-1'>
@@ -126,7 +126,7 @@ export default function Home() {
 						</button>
 					</div>
 				</div>
-				<div className='d-flex justify-content-center mb-5'>
+				<div className='d-flex justify-content-center mb-2'>
 					{gradient && <CssCode gradient={gradient} />}
 				</div>
 			</div>
